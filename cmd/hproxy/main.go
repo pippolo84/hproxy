@@ -85,7 +85,7 @@ func NewProxy() *Proxy {
 	return proxy
 }
 
-// Init initializes private components of the service, like its internal proxy
+// Init initializes private components of the service, like its internal client
 func (p *Proxy) Init() error {
 	rand.Seed(time.Now().UnixNano())
 
